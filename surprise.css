@@ -1,0 +1,64 @@
+/* styles/surprise.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    overflow-x: hidden; /* Empêche le défilement horizontal */
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 32px;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: fadeIn 2s ease-in-out;
+}
+
+h2 {
+    color: #2980b9;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 18px;
+    }
+}
+
+/* Animation de fondu */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation de survol pour les éléments */
+p:hover, h1:hover, h2:hover {
+    color: #3498db;
+    transition: color 0.3s ease;
+    transform: scale(1.05);
+}
