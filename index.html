@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Cadeau d'anniversaire pour le marié</title>
+   
+</head>
+<body>
+    <div id="text-container">
+        <h1>Un Cadeau Spécial pour Mr_Traoré</h1>
+        <p>Scannez le QR code ci-dessous pour découvrir votre surprise !</p>
+    </div>
+
+    <div id="qr-container">
+        <div id="qrcode">
+            <!-- QR Code sera généré ici -->
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script>
+        // Générer un QR code
+        var qrcode = new QRCode(document.getElementById("qrcode"), {
+            text: "https://https://Traoré.com", // Lien vers la page de résultat
+            width: 200,
+            height: 200,
+            colorDark : "#000000",
+            colorLight : "#ffffff",
+            correctLevel : QRCode.CorrectLevel.H
+        });
+    </script>
+</body>
+</html>
